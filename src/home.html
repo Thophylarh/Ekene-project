@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/33110a58c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="w-full bg-blue-600 topbar-container">
+      <div
+        class="items-center justify-between w-9/12 py-4 mx-auto text-white md:flex"
+      >
+        <p>Cybersecurity as a service.</p>
+        <div>
+          <div class="hidden md:flex gap-x-2">
+            <p>Sign in</p>
+            <p>/</p>
+            <p>Checkout</p>
+            <p>/</p>
+            <div class="relative">
+              <div
+                class="w-4 h-4 rounded-full bg-[#f16060] text-white text-[10px] flex items-center justify-center absolute -top-2 left-3"
+              >
+                0
+              </div>
+              <p><i class="fas fa-shopping-cart"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="navbar-container">
+      <div
+        class="flex items-center justify-between w-11/12 py-4 mx-auto md:w-9/12"
+      >
+        <h1>
+          <span class="text-2xl italic font-semibold text-red-500">E</span>s
+          store
+        </h1>
+        <div
+          class="border-2 border-[#333] rounded-md flex items-center py-2 px-2 md:w-4/12 sm:w-auto"
+        >
+          <i class="mr-2 fas fa-search"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder=""
+            class="border-none focus:outline-none"
+          />
+        </div>
+        <div>
+          <div class="items-center hidden md:flex gap-x-4">
+            <div class="block md:hidden gap-x-2">
+              <p>Sign in</p>
+              <p>/</p>
+              <p>Checkout</p>
+              <p>/</p>
+              <div class="relative">
+                <div
+                  class="w-4 h-4 rounded-full bg-[#f16060] text-white text-[10px] flex items-center justify-center absolute -top-2 left-3"
+                >
+                  0
+                </div>
+                <p><i class="fas fa-shopping-cart"></i></p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                All Products <i class="arrow-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Product 1</a>
+                <a href="#">Product 2</a>
+                <a href="#">Product 3</a>
+              </div>
+            </div>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>FAQ</p>
+          </div>
+          <div class="mobile-view md:hidden">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w-11/12 py-4 mx-auto md:w-9/12">
+        <div class="carousel">
+          <div class="slider-bg"></div>
+          <div class="slider-bg-one"></div>
+          <div class="slider-bg"></div>
+        </div>
+        <div class="flex items-center justify-center gap-x-4 carousel-arrows">
+          <button id="prevBtn" class="btn-style">
+            <i class="fa-solid fa-caret-right"></i>
+          </button>
+
+          <button id="nextBtn" class="btn-style">
+            <i class="fa-solid fa-caret-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="home-items">
+      <div class="w-11/12 py-4 mx-auto md:w-9/12">
+        <div class="container clearfix">
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p class="text">Shirts</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p class="text">Socks</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p class="text">Stickers</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p class="text">Jackets</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p class="text">Outdoor</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p class="text">Office Doodas</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p class="text">Esecurity Bottle</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p class="text">Journal</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/shirt.jpg" alt="" />
+            <p>Esecurity Prismalux Journal</p>
+          </div>
+
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p>"Multi-Shield | Royal Socks"</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p>Esecurity Drinkware</p>
+          </div>
+          <div class="card">
+            <img src="../src/assets/bottle.jpg" alt="" />
+            <p>Timbuk2 Office Bottle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // JavaScript for simple carousel functionality with arrow button
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".carousel > div");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.style.display = "block";
+          } else {
+            slide.style.display = "none";
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      prevBtn.addEventListener("click", prevSlide);
+      nextBtn.addEventListener("click", nextSlide);
+
+      // Show the initial slide
+      showSlide(currentIndex);
+    </script>
+  </body>
+</html>
