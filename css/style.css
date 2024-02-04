@@ -941,6 +941,11 @@ video {
   font-size: 32px;
   font-weight: 700;
 }
+#footer {
+  background-color: #e2e5e7;
+  padding: 80px 0;
+}
+
 
 @media (max-width: 1024px) {
   .card {
