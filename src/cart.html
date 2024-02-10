@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esecurity</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/33110a58c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="w-full bg-blue-600 topbar-container">
+      <div
+        class="items-center justify-between w-9/12 py-4 mx-auto text-white md:flex"
+      >
+        <p>Cybersecurity as a service.</p>
+        <div>
+          <div class="hidden md:flex gap-x-2">
+            <p>Sign in</p>
+            <p>/</p>
+            <p>Checkout</p>
+            <p>/</p>
+            <div class="relative">
+              <div
+                class="w-4 h-4 rounded-full bg-[#f16060] text-white text-[10px] flex items-center justify-center absolute -top-2 left-3"
+              >
+                0
+              </div>
+              <p><i class="fas fa-shopping-cart"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="navbar-container">
+      <div
+        class="flex items-center justify-between w-11/12 py-4 mx-auto md:w-9/12"
+      >
+        <h1>
+          <span class="text-2xl italic font-semibold text-red-500">E</span>s
+          store
+        </h1>
+        <div
+          class="border-2 border-[#333] rounded-md flex items-center py-2 px-2 md:w-4/12 sm:w-auto"
+        >
+          <i class="mr-2 fas fa-search"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder=""
+            class="border-none focus:outline-none"
+          />
+        </div>
+        <div>
+          <div class="items-center hidden md:flex gap-x-4">
+            <div class="block md:hidden gap-x-2">
+              <p>Sign in</p>
+              <p>/</p>
+              <p>Checkout</p>
+              <p>/</p>
+              <div class="relative">
+                <div
+                  class="w-4 h-4 rounded-full bg-[#f16060] text-white text-[10px] flex items-center justify-center absolute -top-2 left-3"
+                >
+                  0
+                </div>
+                <p><i class="fas fa-shopping-cart"></i></p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                All Products <i class="arrow-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Product 1</a>
+                <a href="#">Product 2</a>
+                <a href="#">Product 3</a>
+              </div>
+            </div>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>FAQ</p>
+          </div>
+          <div class="mobile-view md:hidden">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cart">
+      <div class="w-11/12 py-4 mx-auto md:w-9/12">
+        <div class="flex items-start justify-between">
+          <div class="border">
+            <img src="../src/assets/socks-imgg.png" alt="" />
+          </div>
+          <div class="w-6/12">
+            <div class="">
+              <h4 class="text-2xl font-medium text-[#656569]">
+                "Multi-Shield | Royal" Socks
+              </h4>
+              <p class="">$8 USD</p>
+            </div>
+            <div class="">
+              <label for="size-dropdown" class=""> Size</label>
+              <select id="size-dropdown " class="dd-style">
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+              </select>
+            </div>
+            <div class="flex items-center justify-between gap-x-4">
+              <div class="quantity-selector">
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value="1"
+                  class="quantity-input"
+                />
+              </div>
+              <div class="sld-container">
+                <!-- <input type="" value="Sold Out" class="sold-out" /> -->
+                <p class="sold-out">Sold Out</p>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <p class="">
+                You a Sagittarius? Libra? Pisces? Whatever you are, these socks
+                are clearly calling to you. Follow your heart—embrace your
+                destiny!—and add these bad boys to your shopping cart.
+              </p>
+              <p>
+                Made from 75% sweat-wicking acrylic, 15% nylon, and 10% spandex.
+              </p>
+              <p>
+                Featuring a double-stitched heel and toe, “Easy Fit” cuff for a
+                great fit, and leprechaun whiskers for good luck.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Get elements
+      const decrementButton = document.querySelector(".decrement");
+      const incrementButton = document.querySelector(".increment");
+      const quantityInput = document.querySelector(".quantity-input");
+
+      // Decrement function
+      decrementButton.addEventListener("click", () => {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 0) {
+          quantityInput.value = currentValue - 1;
+        }
+      });
+
+      // Increment function
+      incrementButton.addEventListener("click", () => {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+      });
+    </script>
+  </body>
+</html>
