@@ -947,8 +947,7 @@ video {
   padding: 10px 5px;
   width: auto;
 }
-.quantity-input
- {
+.quantity-input {
   text-decoration: none;
   outline: none;
 }
@@ -964,6 +963,36 @@ video {
   padding: 10px 5px;
   border: 1px solid #afadad;
   align-items: center;
+  margin: 20px 0;
+}
+
+.select-space{
+  margin: 10px 0;
+}
+
+
+.sock-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.sock-image:hover {
+  transform: scale(1.5); /* Zoom effect on hover */
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 30px 0;
+  width: 100%;
+
+}
+tr {
+  border-bottom: 1px solid #afadad; /* Border only at the bottom of each row */
+}
+td {
+  padding: 8px;
 }
 
 #footer {

@@ -69,19 +69,17 @@
                 <p><i class="fas fa-shopping-cart"></i></p>
               </div>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                All Products <i class="arrow-down"></i>
-              </button>
-              <div class="dropdown-content">
+            <div class="">
+              <button class="">All Products</button>
+              <!-- <div class="dropdown-content">
                 <a href="#">Product 1</a>
                 <a href="#">Product 2</a>
                 <a href="#">Product 3</a>
-              </div>
+              </div> -->
             </div>
-            <p>About us</p>
-            <p>Contact us</p>
-            <p>FAQ</p>
+            <button>About us</button>
+            <button>Contact us</button>
+            <button>FAQ</button>
           </div>
           <div class="mobile-view md:hidden">
             <i class="fas fa-bars"></i>
@@ -92,19 +90,20 @@
     <section id="cart">
       <div class="w-11/12 py-4 mx-auto md:w-9/12">
         <div class="flex items-start justify-between">
-          <div class="border">
-            <img src="../src/assets/socks-imgg.png" alt="" />
-          </div>
+            <div class="sock-container">
+                <img src="../src/assets/socks-imgg.png" alt="Socks Image" class="sock-image" />
+            </div>
+            
           <div class="w-6/12">
             <div class="">
               <h4 class="text-2xl font-medium text-[#656569]">
                 "Multi-Shield | Royal" Socks
               </h4>
-              <p class="">$8 USD</p>
+              <p class="py-4">$8 USD</p>
             </div>
             <div class="">
               <label for="size-dropdown" class=""> Size</label>
-              <select id="size-dropdown " class="dd-style">
+              <select id="size-dropdown " class="dd-style select-space">
                 <option value="large">Large</option>
                 <option value="medium">Medium</option>
                 <option value="small">Small</option>
@@ -125,19 +124,43 @@
                 <p class="sold-out">Sold Out</p>
               </div>
             </div>
-            <div class="space-y-8">
+            <div class="">
               <p class="">
                 You a Sagittarius? Libra? Pisces? Whatever you are, these socks
                 are clearly calling to you. Follow your heart—embrace your
                 destiny!—and add these bad boys to your shopping cart.
               </p>
-              <p>
+              <p class="py-4">
                 Made from 75% sweat-wicking acrylic, 15% nylon, and 10% spandex.
               </p>
-              <p>
+              <p class="">
                 Featuring a double-stitched heel and toe, “Easy Fit” cuff for a
                 great fit, and leprechaun whiskers for good luck.
               </p>
+            </div>
+            <div class="">
+              <table>
+                <tr>
+                  <td>Size</td>
+                  <td>Medium</td>
+                  <td>Large</td>
+                </tr>
+                <tr>
+                  <td>US Men</td>
+                  <td>5-9</td>
+                  <td>9-13</td>
+                </tr>
+                <tr>
+                  <td>US Women</td>
+                  <td>10-12</td>
+                  <td>10-14</td>
+                </tr>
+                <tr>
+                  <td>Euro</td>
+                  <td>37-42</td>
+                  <td>43-48</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
